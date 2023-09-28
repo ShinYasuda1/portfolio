@@ -14,15 +14,11 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <!-- <img src="{% static 'img/logo.svg' %}" width="80" height="80"> -->
-                <img src="{% static 'img/logo.svg' %}" width="80" height="80" />
+                <h1>Portfolio</h1>
             </a>
             <ul class="navbar-nav">
                 <li class="nav-item mr-3">
                     <a class="nav-link nav-color" href="/">HOME</a>
-                </li>
-                <li class="nav-item mr-3">
-                    <a class="nav-link nav-color" href="{% url 'about' %}">ABOUT</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-color" href="{% url 'contact' %}">CONTACT</a>
@@ -33,17 +29,27 @@
 
     <main>
         <div class="container">
-            {% block content %}
-            {% endblock %}
+            <h1 class="text-center">Portfolio</h1>
+            <h2 class="text-center">Shin Yasuda</h2>
+            <p class="text-center">都内で勤務しているITエンジニアです。</p>
         </div>
+
+        <div class="container">
+            <h2 class="text-center">Django Apps</h2>
+            <div class="row">
+              <div class="col"><h4><a href="https://github.com/ShinYasuda1/django-booking" target="_blank">Booking App</a></h4></div>
+              <div class="col"><h4><a href="https://github.com/ShinYasuda1/django-menu-app" target="_blank">Menu App</a></h4></div>
+              <div class="col"><h4><a href="https://github.com/ShinYasuda1/django-blog" target="_blank">Blog App</a></h4></div>
+              <div class="col"><h4><a href="https://github.com/ShinYasuda1/django-board" target="_blank">Bulletin Board App</a></h4></div>
+            </div>
     </main>
 
     <footer class="py-4 bg-dark text-center">
         <small class="text-white">&copy; 2023 shinya yasuda</small>
     </footer>
 
-    {% block extra_js %}
-    {% endblock %}
 </body>
+
+</html>
 
 </html>
